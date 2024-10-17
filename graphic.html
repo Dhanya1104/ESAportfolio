@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graphicdesign</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+    @font-face {
+        font-family: Gill;
+        src: url(./gilldisplaycompressedplain.otf);
+    }
+
+    * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#page-heading {
+  position: relative;
+      font-family: "DM Sans", sans-serif;
+      font-size: 20px;
+      color: #F84962 ;
+      position: fixed;
+      top: 30px;
+      left: 50px;
+    }
+
+    #back{
+      position: relative;
+      font-family: "DM Sans", sans-serif;
+      font-size: 20px;
+      color: #010101 ;
+      position: fixed;
+      top:30px;
+      right: 60px;
+    }
+    #back:hover{
+      color: #F84962;
+    }
+.slider-container{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://uk.pinterest.com/pin/666814288584067463/');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-images{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.slider-images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.slider-img{
+  width: 110px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.7s ease;
+  
+}
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+  height: 310px;
+}
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+  height: 350px;
+}
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+  height: 500px;
+}
+h1{
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 1000;
+  text-align: left;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: rotate(270deg);
+  transition: 0.7s ease;
+}
+.details{
+  position: absolute;
+  bottom: 43px;
+  left: 43px;
+}
+.details h2{
+  font-family: "DM Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 44px;
+  text-align: left;
+  color: #040404;
+  transition: 0.7s ease;
+  display: none;
+}
+.details p{
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 33px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+.slider-img.active{
+  width: 700px !important;
+  height: 700px !important;
+}
+.slider-img.active h1{
+   display: none;
+}
+.slider-img.active .details p, .slider-img.active .details h2{
+  display: block;
+}
+#gra{
+  font-family: "DM Sans",sans-serif;
+  font-size: 20px;
+}
+
+</style>
+  </head>
+  <body>
+    <h2 id="page-heading">Graphic Design</h2>
+    <a href="showcase.html"><h2 id="back">back</h2></a>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="./magazine.png" alt="Double Spread Magazine" />
+          <h1>Magazine</h1>
+          <div class="details">
+            <h2>Double Magazine Layout</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="./browniemag.png" alt=""/>
+          <h1>MAGAZINE COVER</h1>
+          <div class="details">
+            <h2>Magazine Cover</h2>
+            <p>For a Food Magazine</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="./pitchdeck.png" alt="3" />
+          <h1>PITCH DECK</h1>
+          <div class="details">
+            <h2>F4 Racing Pitch Deck </h2>
+            <p>For Ahren Manhas</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="./cube.png" alt="4" />
+          <h1>GRAPHIC CUBE</h1>
+          <div class="details">
+            <h2>Graphic Cube</h2>
+            <p>Based on Brooklyn, NYC</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="./box.png" alt="5" />
+          <h1>PACKAGING</h1>
+          <div class="details">
+            <h2>FIREWORKS BOX</h2>
+            <p>Packaging Design in Bahaus Style</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="./mp.png" alt="6" />
+          <h1>PHYSICAL TYPOGRAPHY</h1>
+          <div class="details">
+            <h2>Movie Poster</h2>
+            <p>The Perks of Being a Wallflower</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="./wing.png" alt="7" />
+          <h1>SYMBOLIC INTEPRETATION</h1>
+          <div class="details">
+            <h2>Rhyme Intepretation</h2>
+            <p>Using Wing Dings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+  </body>
+</html>

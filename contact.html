@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mystory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: Gill;
+            src: url(./gilldisplaycompressedplain.otf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+  
+        .navbar {
+            background-color: #F84962;
+            background height: 67px;
+            background width: 1200px;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-left: 52px;
+            margin-right: 52px;
+            margin-top: 35px;
+        }
+
+     
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+       
+        .navbar ul li a {
+            color: white;
+            font-family: "DM Sans", sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+     
+        .navbar ul li a:hover , 
+        .navbar ul li a:active
+        {
+            background-color: white;
+            padding: 21px 20px;
+            color: #F84962;
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items:center;
+            justify-content: space-around;
+            padding-top: 4vh;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 800px;
+            padding: 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #00AEDD;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="text"]::placeholder, 
+        input[type="email"]::placeholder, 
+        input[type="tel"]::placeholder, 
+        textarea::placeholder {
+            color: #fff;
+            opacity: 0.7;
+        }
+
+        input[type="text"]:focus, 
+        input[type="email"]:focus, 
+        input[type="tel"]:focus, 
+        textarea:focus {
+            background-color: #0094c1;
+        }
+
+        textarea {
+            height: 100px;
+            border-radius: 20px;
+        }
+
+        .submit-btn {
+            position: relative;
+            right:335px;
+            background-color: #000000;
+            color: #EFBBC7;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-family: "DM Sans", sans-serif;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            font-weight: 400px;
+        }
+
+        .submit-btn:hover {
+            background-color: #F84962;
+            color: #fff;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-link {
+            font-family: "DM Sans", sans-serif;
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #1a1a1a;
+            background-color: #C2EBF7;
+            padding: 30px 35px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .social-link:hover {
+            transform: scale(1.05);
+        }
+
+        .ticker-wrapper {
+            transform: rotate(-2.200deg);
+            background-color: #EFBBC7;; 
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            font-family:"Gill",sans-serif;
+            padding:0%;
+        }
+
+        .ticker {
+            
+    display: flex;
+    animation: scroll 28s linear infinite ;
+    transform: rotate(11.625deg);
+    animation-delay:0s
+            
+        }
+
+        .ticker span {
+            font-size: 60px;
+            font-weight: 700;
+            color: #000; 
+            margin-right: 50px;
+            white-space: nowrap;
+            
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-150%);
+            }
+        }
+        </style>
+   </head>
+   <body> <div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Main Stage</a></li>
+            <li><a href="another.html">My Story</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="trackrecord.html">Track Record</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<div>
+
+<div class="ticker-wrapper">
+    <div class="ticker">
+        <span>COLLABORATE </span>
+        <span>INNOVATE</span>
+        <span>CO-CREATE</span>
+        <span>AND LEAVE A MARK</span>
+        <span>COLLABORATE </span>
+        <span>INNOVATE</span>
+        <span>CO-CREATE</span>
+        <span>AND LEAVE A MARK</span>
+        <span>COLLABORATE </span>
+        <span>INNOVATE</span>
+        <span>CO-CREATE</span>
+        <span>AND LEAVE A MARK</span>    
+    </div>
+</div>
+
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Message me here" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/dhanya1611/" class="social-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" alt="LinkedIn" width="20">
+            LinkedIn
+        </a>
+        <a href="https://www.behance.net/dhanyashree" class="social-link">
+            <img src="https://cdn.worldvectorlogo.com/logos/behance-1.svg" alt="Behance" width="20">
+            Behance
+        </a>
+    </div>
+</div>
+
+<script>
+    
+    function setActiveLink() {
+        const links = document.querySelectorAll('.navbar ul li a'); // Select all navbar links
+        const storedActiveLink = localStorage.getItem('activeLink'); // Get the stored active link from localStorage
+
+        links.forEach(link => {
+            // Check if the link's href matches the stored active link
+            if (link.href === storedActiveLink) {
+                link.classList.add('active'); // Add 'active' class to the matching link
+            } else {
+                link.classList.remove('active'); // Remove 'active' class from non-matching links
+            }
+        });
+    }
+
+    
+    function updateActiveLink(event) {
+        localStorage.setItem('activeLink', event.currentTarget.href); // Store the clicked link's href in localStorage
+    }
+
+    // Set the active link on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        setActiveLink(); // Set the active link based on stored data
+        const links = document.querySelectorAll('.navbar ul li a'); // Select all navbar links
+
+        // Add click event listeners to all navbar links to update the active link on click
+        links.forEach(link => {
+            link.addEventListener('click', updateActiveLink);
+        });
+    });
+</script>
+</body>
+</html>

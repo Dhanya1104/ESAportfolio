@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>interaction_design</title>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        @font-face {
+            font-family: Gill;
+            src: url(./gilldisplaycompressedplain.otf);
+        }
+         
+#CARDS{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+ }
+
+ .parts{
+  position: relative;
+  top:500px;
+ }
+.card {
+  position: relative;
+  top:250px;
+  left:30px;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: #000000;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.card:hover {
+  height: 380px;
+}
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50px); 
+    z-index: 99;
+}
+.img1 {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.content {
+ font-family:"DM Sans",sans-serif;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+  color: #ffffff; 
+  z-index: 2;
+
+}
+.card:hover > .content {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+.content h2 {
+  color: #ffffff;
+}
+#text {
+    margin-top: 0; 
+    margin-bottom: 50px; 
+}
+
+#text p {
+    margin-bottom: 10px; 
+}
+
+#one {
+    margin-top: 15px;
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card2 {
+  position: relative;
+  top:250px;
+  left:20px;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: #000000;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.card2:hover {
+  height: 380px;
+}
+.imgbox2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50px); 
+    z-index: 99;
+}
+.img2 {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.content2 {
+ font-family:"DM Sans",sans-serif;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+  color: #ffffff; 
+  z-index: 2;
+
+}
+.card2:hover > .content2 {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+.content2 h2 {
+  color: #ffffff;
+}
+#text2 {
+    margin-top: 0; 
+    margin-bottom: 50px; 
+}
+
+#text2 p {
+    margin-bottom: 10px; 
+}
+
+.card3 {
+  position: relative;
+  top:250px;
+  left:10px;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: #000000;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.card3:hover {
+  height: 380px;
+}
+.imgbox3 {
+ 
+    width: 100%;
+    height: 100%;
+    transform: translateY(-60px); 
+    z-index: 99;
+}
+.img3 {
+  height:230px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.content3 {
+ font-family:"DM Sans",sans-serif;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+  color: #ffffff; 
+  z-index: 2;
+
+}
+.card3:hover > .content3 {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+.content3 h2 {
+  color: #ffffff;
+}
+#text3 {
+    margin-top: 0;
+    margin-bottom: 50px; 
+}
+
+#text3 p {
+    margin-bottom: 10px; 
+}
+
+
+
+.card4 {
+  position: relative;
+  top:250px;
+  left:10px;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: #000000;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.card4:hover {
+  height: 380px;
+}
+.imgbox4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-60px); 
+    z-index: 99;
+}
+.img4 {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.content4 {
+ font-family:"DM Sans",sans-serif;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+  color: #ffffff; 
+  z-index: 2;
+
+}
+.card4:hover > .content4 {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+.content4 h2 {
+  color: #ffffff;
+}
+#text4 {
+    margin-top: 0; 
+    margin-bottom: 50px; 
+}
+
+#text4 p {
+    margin-bottom: 10px; 
+}
+
+#page-heading {
+  position: relative;
+      font-family: "DM Sans", sans-serif;
+      font-size: 20px;
+      color: #F84962 ;
+      position: fixed;
+      top: 30px;
+      left: 80px;
+    }
+
+    #goback{
+      font-family: "DM Sans", sans-serif;
+      font-size: 20px;
+      color: #ffffff ;
+  
+      
+    }
+    #goback:hover{
+      color: #F84962;
+    }
+    .lin{
+      text-decoration: none;
+    }
+
+    .long {
+      position:relative;
+      top:1000px;
+      right:800px;
+      max-width: 100%; 
+      height: auto; 
+      margin-top: 20px; 
+  }
+
+  .card .imgbox img,
+.card2 .imgbox2 img,
+.card3 .imgbox3 img,
+.card4 .imgbox4 img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 10px; 
+}
+
+.card .imgbox img:hover,
+.card2 .imgbox2 img:hover,
+.card3 .imgbox3 img:hover,
+.card4 .imgbox4 img:hover {
+    transform: scale(1.20);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
+}
+
+
+    
+
+  button {
+  position: relative;
+  left:55px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #EFBBC7;
+  color: #030303;
+  transform: scale(1.1);
+}
+
+
+.info-section1 {
+  padding-left: 20px;
+  padding-right: 20px;
+    background-color: #030303;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.info-section1 img {
+    height:3000px;
+    width:1300px;
+    padding-left: 20px;
+  padding-right: 20px;
+}
+
+.info-section1 h2 {
+  padding-top: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.info-section1 p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.info-section2 {
+    padding: 50px 20px;
+    background-color: #030303;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-section2 h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.info-section2 p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.info-section2 img {
+  padding-left:20px;
+  padding-right:20px;
+    height:2000px;
+    width:1280px;
+}
+
+.info-section3 h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+
+.info-section3 {
+    padding: 50px 20px;
+    background-color: #030303;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-section3 h2 {
+  padding-top: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.info-section3 img {
+  padding-left:100px;
+  height:2000px;
+  width:1200px;
+}
+
+.info-section3 p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.info-section3 {
+    padding: 50px 20px;
+    background-color: #030303;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-section3 h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.info-section3 p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.info-section3 img {
+  padding-left:100px;
+  height:2000px;
+  width:1200px;
+}
+
+.info-section4 p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.info-section4 {
+    padding: 50px 20px;
+    background-color: #030303;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-section4 h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.info-section4 p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.info-section4 img {
+  padding-left:100px;
+  height:2000px;
+  width:1200px;
+}
+
+
+.info-section4 {
+    padding: 50px 20px;
+    background-color: #030303;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-section4 h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.info-section4 p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.info-section4 img {
+  padding-left:100px;
+  height:3000px;
+  width:1200px;
+}
+   
+html {
+    scroll-behavior: smooth;
+}
+
+#back{
+      position: relative;
+      font-family: "DM Sans", sans-serif;
+      font-size: 15px;
+      color: #010101 ;
+      position: fixed;
+      top:30px;
+      right: 80px;
+    }
+   #back:hover{
+        color: #F84962;
+    }  
+
+    </style>
+ </head>
+    <body>
+      <section id="CARDS">
+        <h2 id="page-heading">Interaction Design</h2>
+        <a href="showcase.html"><h2 id="back">back</h2></a>
+        <div class="card">
+            <div class="imgbox">
+              <img src="./seeyouphone.png" alt="See You App logo" class="img1">
+            </div>
+            <div class="content">
+                <p id="text">
+                    <b>SEE YOU</b><br>
+                    SeeYou is the go-to app for 
+                    effortlessly coordinating meet-ups, 
+                    with a user-friendly interface that 
+                    takes care of location and budget 
+                    planning for you.<br>
+                    <br>
+                  <a href="#see"><button>view more</button></a>   
+                 
+                </p>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="imgbox2">
+              <img src="re.png" alt="Restash App logo" class="img2">
+            </div>
+            <div class="content2">
+                <p id="text2">
+                    <b>RESTASH</b><br>
+                    The go-to platform for Design 
+                    and Architecture students connects 
+                    peers for easy resource sharing, 
+                    offering a streamlined hub with 
+                    helpful guidance.<br>
+                    <br>
+                    <a href="#res"><button id="view-more-4">view more</button></a>  
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="card3">
+          <div class="imgbox3">
+            <img src="./stove.png" alt="Stove" class="img3">
+          </div>
+          <div class="content3">
+              <p id="text3">
+                  <b>DIGITISED GAS STOVE</b><br>
+                  The digitized stove combines technology 
+                  with traditional Indian cooking,<br> offering smart controls for 
+                  enhanced convenience and multitasking.
+                  <br>
+                  <br>
+                  <a href="#sto"><button id="view-more-3">view more</button></a> 
+              </p>
+          </div>
+      </div>
+
+        <div class="card4">
+            <div class="imgbox4">
+              <img src="track.png" alt="Track Away App logo" class="img4">
+            </div>
+            <div class="content4">
+                <p id="text4">
+                    <b>TRACK AWAY</b><br>
+                     An innovative routine tracking 
+                     app tackles these issues by 
+                     offering an easy and seamless way 
+                     to monitor and optimise daily habits. 
+                     <br> <br>
+                     <a href="#trac"><button id="view-more-4">view more</button></a>
+                </p>
+            </div>
+        </div>
+      </section>
+<div class="parts">
+  <section id="see" class="info-section1">
+    <h2>See You App </h2>
+    <img src="./sylong.png">
+    <a href="#CARDS" class="lin"><h2 id="goback">Go Back</h2></a>
+</section>
+       
+
+      <section id="res" class="info-section2">
+        <h2>Restash</h2>
+        <img src="./stash.png">
+        <a href="#CARDS" class="lin"><h2 id="goback">Go Back</h2></a>
+    </section>
+      
+ 
+      <section id="sto" class="info-section3">
+          <h2>Digitised Gas Stove </h2>
+          <img src="./stov.png">
+          <a href="#CARDS" class="lin"><h2 id="goback">Go Back</h2></a>
+      </section>
+      
+ 
+      <section id="trac" class="info-section4">
+          <h2>Track Away App </h2>
+          <img src="./away.png">
+          <a href="#CARDS" class="lin"><h2 id="goback">Go Back</h2></a>   
+      </section>
+    </div>
+        <script>
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function (e) {
+                  e.preventDefault();
+          
+                  document.querySelector(this.getAttribute('href')).scrollIntoView({
+                      behavior: 'smooth'
+                  });
+              });
+          });
+
+          </script>
+
+    </body>
+</html>

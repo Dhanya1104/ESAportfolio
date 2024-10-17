@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mystory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: Gill;
+            src: url(./gilldisplaycompressedplain.otf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+    
+        .navbar {
+            background-color: #F84962;
+            background height: 67px;
+            background width: 1200px;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-left: 52px;
+            margin-right: 52px;
+            margin-top: 35px;
+        }
+
+     
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+       
+        .navbar ul li a {
+            color: white;
+            font-family: "DM Sans", sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+     
+        .navbar ul li a:hover {
+            background-color: white;
+            padding: 21px 20px;
+            color: #F84962;
+        }
+
+        .navbar ul li a:active {
+            background-color: white;
+            padding: 21px 20px;
+            color: #F84962;
+        }
+
+        body {
+    font-family: 'DM Sans', sans-serif;
+    color: #000000; 
+
+}
+
+.experience-container {
+    position:relative;
+    top:50px;
+    left:50px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1340px;
+    height:400px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: #ffffff;
+}
+
+.section-title {
+    font-size: px;
+    font-weight: 300;
+    color: #f9f8f8;
+    font-family: "Gill",sans-serif;
+}
+
+.tabs {
+  
+    margin-top: 20px;
+}
+
+.tab {
+    background-color: #ffffff;
+    color: #F84962;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab:hover {
+    background-color: #F84962;
+    color: #ffffff;
+}
+
+.tab.active {
+    background-color: #F84962;
+    color: #fff;
+}
+
+
+
+.content {
+    background-color: white;
+    color: #121212;
+    padding: 20px;
+    border-radius: 0 10px 10px 10px;
+    height:280px;
+   
+}
+
+.company-name {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.date-range {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400px;
+    float: right;
+}
+
+.details {
+    margin-top: 15px;
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+
+
+.tab {
+    transition: all 0.2s ease-in-out;
+}
+
+.tab:hover {
+    transform: translateY(-2px);
+}
+
+.content {
+    animation: fadeIn 0.5s ease-in-out;
+    display: none;
+}
+
+
+.content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+
+:before,
+:after{
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans",sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+.rollwrapper{
+    position: relative;
+    top:100px;
+    left:330px;
+    box-sizing: content-box;
+    background-color: #ffffff;
+    height: 70px;
+    padding: 50px 40px;
+    display: flex;
+    color: #F84962;
+    font-size: 60px;
+    font-family: "Gill",sans-serif;
+   
+    
+}
+.words{
+    overflow: hidden;
+}
+span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #000000;
+    animation: spin_words 6s infinite;
+    font-size: 60px;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Main Stage</a></li>
+                <li><a href="another.html">My Story</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="trackrecord.html">Track Record</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="experience-container">
+        <h1 class="section-title">Experience</h1>
+        <div class="tabs">
+            <button class="tab active" data-tab="design-intern">Design Intern</button>
+            <button class="tab" data-tab="digital-marketing">Digital Marketing Intern</button>
+            <button class="tab" data-tab="freelance">Freelance</button>
+        </div>
+
+     
+        <div class="content active" id="design-intern">
+            <h2 class="company-name">Consero Global</h2>
+            <h2 id="date" class="date-range">March 2024 - June 2024</h2>
+            <ul class="details">
+                <li>Designed materials and communication assets to effectively convey company initiatives and messages to a diverse audience.</li>
+                <li>Spearheaded the conceptualisation of a new office space.</li>
+                <li>Produced engaging multimedia content to encapsulate and highlight key office events and milestones.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="digital-marketing" style="display: none;">
+            <h2 class="company-name">LWYD Interactive</h2>
+            <h2 class="date-range">July 2024 - August 2024</h2>
+            <ul class="details">
+                <li>Crafted and executed digital marketing strategies, enhancing brand visibility and engagement across key online platforms.</li>
+                <li> Managed social media content and campaigns, driving increased follower engagement and brand recognition.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="freelance" style="display: none;">
+            <h2 class="company-name">Freelance Design</h2>
+            <h2 class="date-range"></h2>
+            <ul class="details">
+                <li>Collaborated with clients on various design projects, delivering high-quality visuals.</li>
+                <li>Produced branding materials and web designs for small businesses.</li>
+                
+            </ul>
+        </div>
+    </div>
+
+<div></div>
+    <div class="rollwrapper">
+        <p>Work Approach:</p>
+        <div class="words">
+            <span>Curiosity-Driven</span>
+            <span>Embracing Collaboration</span>
+            <span>Creativity and Practicality</span>
+            <span>Flexible Thinking</span>
+        </div>
+    </div>
+
+
+<script>
+    
+document.querySelectorAll('.tab').forEach(button => {
+    button.addEventListener('click', () => {
+        const tabContentId = button.getAttribute('data-tab');
+
+        
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+       
+        document.querySelectorAll('.content').forEach(content => {
+            content.style.display = 'none';
+        });
+
+        
+        button.classList.add('active');
+
+        
+        document.getElementById(tabContentId).style.display = 'block';
+    });
+});
+
+</script>
+</body>
+</html>
